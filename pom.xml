@@ -25,9 +25,23 @@
 			<groupId>net.sf.exlp</groupId>
 			<artifactId>exlp-util</artifactId>
 		</dependency>
-
-	
-				
+		<dependency>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+  			<artifactId>httpclient</artifactId>
+		    <version>4.3.6</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.offbytwo.jenkins</groupId>
+		  <artifactId>jenkins-client</artifactId>
+		  <version>0.3.5</version>
+		</dependency>
+			
 		<!-- Logging -->
 		<dependency>
 			<groupId>log4j</groupId>

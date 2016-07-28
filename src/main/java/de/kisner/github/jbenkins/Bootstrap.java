@@ -12,7 +12,11 @@ import net.sf.exlp.util.io.LoggerInit;
 public class Bootstrap
 {
 	final static Logger logger = LoggerFactory.getLogger(Bootstrap.class);
+
 	public final static String xmlConfig = "jbenkins/config/jbenkins.xml";
+	public static String cfgUrl = "rest.jenkins.url";
+	public static String cfgUser = "rest.jenkins.user";
+	public static String cfgPwd = "rest.jenkins.pwd";
 	
 	private static Configuration config;
 	
