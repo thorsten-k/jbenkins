@@ -1,8 +1,13 @@
 package de.kisner.jbenkins;
 
+import java.net.URI;
+import java.net.URISyntaxException;
+
 import org.apache.commons.configuration.Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.offbytwo.jenkins.JenkinsServer;
 
 import net.sf.exlp.exception.ExlpConfigurationException;
 import net.sf.exlp.util.config.ConfigLoader;
@@ -43,5 +48,18 @@ public class Bootstrap
 		config = ConfigLoader.init();
 
 		return config;
+	}
+	
+	public static JenkinsServer jenkins(Configuration config) throws URISyntaxException
+	{
+		String url = config.getString(Bootstrap.cfgUrl);
+		String user = config.getString(Bootstrap.cfgUser);
+		String pwd = config.getString(Bootstrap.cfgPwd);
+		
+		logger.info(Bootstrap.cfgUrl+": "+url);
+		logger.info(Bootstrap.cfgUser+": "+user);
+		logger.info(Bootstrap.cfgPwd+": "+pwd);
+		
+		return new JenkinsServer(new URI(url), user, pwd);
 	}
 }
