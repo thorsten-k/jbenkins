@@ -1,4 +1,4 @@
-package de.kisner.github.jbenkins;
+package de.kisner.jbenkins;
 
 import java.net.URI;
 import java.util.Map;
@@ -10,6 +10,8 @@ import org.slf4j.LoggerFactory;
 import com.offbytwo.jenkins.JenkinsServer;
 import com.offbytwo.jenkins.model.Job;
 import com.offbytwo.jenkins.model.JobWithDetails;
+
+import de.kisner.jbenkins.Bootstrap;
 
 public class TestJenkinsConnection 
 {
@@ -36,6 +38,7 @@ public class TestJenkinsConnection
 			logger.info(job.getDisplayName());
 			logger.info("\t"+job.getLastBuild().getNumber()+" "+job.getLastBuild().details().isBuilding());
 			logger.info("\t"+job.getLastCompletedBuild().getNumber()+" "+job.getLastCompletedBuild().details().getResult().toString());
+			logger.info("\t"+job.isInQueue());
 		}
 		
 	}

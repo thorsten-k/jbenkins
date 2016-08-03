@@ -1,4 +1,4 @@
-package de.kisner.github.jbenkins;
+package de.kisner.jbenkins;
 
 import org.apache.commons.configuration.Configuration;
 import org.slf4j.Logger;
