@@ -114,7 +114,7 @@
 		<dependency>
 			<groupId>org.openfuxml</groupId>
 			<artifactId>ofx-core</artifactId>
-			<version>1.3.5-SNAPSHOT</version>
+			<version>1.3.6-SNAPSHOT</version>
 		</dependency>	
 	</dependencies>
 
