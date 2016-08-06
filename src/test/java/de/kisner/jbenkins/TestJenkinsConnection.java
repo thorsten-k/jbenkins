@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Map;
 
 import org.apache.commons.configuration.Configuration;
-import org.openfuxml.content.table.Table;
 import org.openfuxml.exception.OfxAuthoringException;
 import org.openfuxml.renderer.text.OfxTextRenderer;
 import org.slf4j.Logger;
@@ -16,8 +15,6 @@ import com.offbytwo.jenkins.model.JobWithDetails;
 
 import de.kisner.jbenkins.factory.json.JsonJobsFactory;
 import de.kisner.jbenkins.factory.ofx.OfxJobsFactory;
-import de.kisner.jbenkins.factory.txt.TxtJobFactory;
-import de.kisner.jbenkins.model.json.JbenkinsJob;
 import de.kisner.jbenkins.model.json.JbenkinsJobs;
 
 public class TestJenkinsConnection 
